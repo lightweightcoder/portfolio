@@ -90,21 +90,11 @@
             class="d-flex flex-column flex-md-row justify-content-between mb-2"
           >
             <div class="flex-grow-1">
-              <h2 class="mb-2">Hangout?</h2>
-            </div>
-            <div
-              class="flex-shrink-0 d-flex align-items-center mr-1 mb-1 mb-md-0"
-            >
-              <a
-                href="https://youtu.be/s2XQCLUK3yQ"
-                target="_blank"
-                class="btn btn-primary"
-                >Demo Video</a
-              >
+              <h2 class="mb-2">Doctor on the Go</h2>
             </div>
             <div class="flex-shrink-0 d-flex align-items-center">
               <a
-                href="https://hangout.casa/"
+                href="https://dr-on-the-go.herokuapp.com/"
                 target="_blank"
                 class="btn btn-primary"
                 >Open App</a
@@ -139,27 +129,27 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <img
-                        src="assets/img/hangout/CreateActivity.gif"
+                        src="assets/img/dr-on-the-go/create-consultation.gif"
                         class="d-block w-100"
                         alt="..."
                       />
                       <div class="carousel-caption d-none d-md-block">
-                        <p>Create Activity + Chat</p>
+                        <p>Create Consultation</p>
                       </div>
                     </div>
                     <div class="carousel-item">
                       <img
-                        src="assets/img/hangout/JoinActivity.gif"
+                        src="assets/img/dr-on-the-go/accept-consultation.gif"
                         class="d-block w-100"
                         alt="..."
                       />
                       <div class="carousel-caption d-none d-md-block">
-                        <p>Join Activity + Chat</p>
+                        <p>Accept and Start Consultation</p>
                       </div>
                     </div>
                     <div class="carousel-item">
                       <img
-                        src="assets/img/hangout/logo-16x9.png"
+                        src="assets/img/dr-on-the-go/logo-16x9.png"
                         class="d-block w-100"
                         alt="..."
                       />
@@ -193,32 +183,39 @@
               <div class="mb-5">
                 <h3 class="mb-3">Description</h3>
                 <p>
-                  Hangout? aims to connect new people with common interests and
-                  help them save money by leveraging group deals on activities.
+                  Doctor on the Go is a telehealth app clone. It allows patients
+                  to schedule and conduct online consultations with doctors and
+                  allow doctors to prescribe medications.
                 </p>
               </div>
 
               <div class="mb-5">
                 <h3 class="mb-3">Technologies Used</h3>
                 <div class="subheading mb-1">Frontend</div>
-                <p>React(Create React App), AJAX(Axios), Bootstrap</p>
+                <p>EJS, Bootstrap</p>
                 <div class="subheading mb-1">Backend</div>
-                <p>PostgreSQL/Sequelize, Node/Express</p>
+                <p>PostgreSQL, Node/Express</p>
                 <div class="subheading mb-1">Cloud</div>
-                <p>GitHub, Heroku, Firebase storage, Netlify</p>
+                <p>GitHub, Heroku, AWS S3</p>
               </div>
 
               <div class="mb-5">
                 <h3 class="mb-3">Main Features</h3>
                 <ul>
                   <li>
-                    A user (the creator) can create/edit/delete an activity.
+                    A patient can schedule/cancel a date to consult a doctor and
+                    view past consultation records.
                   </li>
-                  <li>A user (the participant) can join/leave an activity.</li>
                   <li>
-                    Participants and the creator can chat once they join an
-                    activity.
+                    A doctor can accept, start, cancel and end consultations and
+                    view past consultations.
                   </li>
+                  <li>
+                    Forum-like chatbox for patient and doctor to interaction
+                    during the consultation.
+                  </li>
+                  <li>A doctor can prescribe medicine for the patient.</li>
+                  <li>Patient and Doctors can update their profiles.</li>
                 </ul>
               </div>
 
@@ -226,25 +223,14 @@
                 <h3 class="mb-3">Main Learning Points</h3>
                 <ul>
                   <li>
-                    Integrated 2 separate repositories into a full-stack
-                    application - 1 repository for frontend Create React App and
-                    1 repository for backend Express/Node/Postgres.
+                    Learnt Express web framework and integrating with EJS
+                    template engine to render front-end pages.
                   </li>
                   <li>
-                    Implemented a real-time messaging feature using Firebase
-                    cloud database (NoSQL).
+                    Learnt SQL syntax to query the PostgreSQL relational
+                    database.
                   </li>
-                  <li>
-                    Setting cookies across origins (backend to frontend server).
-                  </li>
-                  <li>
-                    Implemented Deep-linking using React Router Dom npm package.
-                  </li>
-                  <li>
-                    Implemented useContext and useReducer React hooks to share
-                    states among multiple levels of components without having to
-                    pass the states down as props.
-                  </li>
+                  <li>Learnt Bootstrap to style pages</li>
                 </ul>
               </div>
             </div>
