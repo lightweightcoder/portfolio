@@ -50,3 +50,57 @@
 .fa-chevron-right {
   color: #be826a;
 }
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #c66c33;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+  background-color: #824027;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.user-stories-div .content {
+  padding: 0px 18px;
+  background-color: #f0af86;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.user-stories {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* inset the + and - icons to display if the state of the collapsible */
+.user-stories-div .collapsible:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  color: #fff;
+  float: right;
+  margin-left: 5px;
+}
+
+.user-stories-div .active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.ERD {
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .user-stories {
+    width: 75%;
+  }
+}
